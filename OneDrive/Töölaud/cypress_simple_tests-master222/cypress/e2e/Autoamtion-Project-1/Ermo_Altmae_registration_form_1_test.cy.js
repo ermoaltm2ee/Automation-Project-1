@@ -96,6 +96,10 @@ describe('Ermo_Altmae_first test suite', () => {
 
     it('User cannot submit data when phone number is absent', () => {
         // Add test, similar to previous one with phone number field not filled in
+        cy.get('#username').type('ErmoA')
+        cy.get('[data-testid="phoneNumberTestId"]').clear()
+        cy.get('input[name="password"]').type('Metsavennad2k23')
+        cy.get('[name="confirm"]').type('Metsavennad2k23')
         // All other fields should be entered correctly
         // Assert that submit button is not enabled and that successful message is not visible
     })
