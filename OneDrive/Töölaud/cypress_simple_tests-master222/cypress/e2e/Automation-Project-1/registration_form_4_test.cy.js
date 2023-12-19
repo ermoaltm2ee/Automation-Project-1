@@ -17,7 +17,7 @@ Assignment 2:
  */
 
 describe("User can submit data only when valid mandatory values are added", () => {
-  it.only("User can submit data only when valid mandatory values are added", () => {
+  it("User can submit data only when valid mandatory values are added", () => {
     //Test_14.Nov.2023
     cy.get('[data-testid="phoneNumberTestId"]').type("555666777");
     cy.get('[data-testid="phoneNumberTestId"]').type("551266377");

@@ -109,7 +109,6 @@ describe("Section 2: Visual tests", () => {
       .should("have.attr", "src")
       .then((src) => {
         cy.log(`Logo source: ${src}`);
-
         expect(src).to.include("cerebrum_hub_logo");
       });
 
@@ -188,7 +187,7 @@ describe("Section 2: Visual tests", () => {
 
   // Create test similar to previous one verifying check boxes
 
-  it.only("Car dropdown is correct", () => {
+  it("Car dropdown is correct", () => {
     // Here is an example how to explicitely create screenshot from the code
     // Select second element and create screenshot for this area, and full page
     cy.get("#cars").select(1).screenshot("Cars drop-down");
